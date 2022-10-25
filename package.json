@@ -1,7 +1,7 @@
 {
-  "name": "device-uuid",
+  "name": "@tewshi/device-uuid",
   "description": "Fast browser device uuid generation library.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://github.com/biggora/device-uuid/",
   "repository": {
     "type": "git",
@@ -13,16 +13,9 @@
       "url": "https://github.com/biggora/device-uuid/blob/master/LICENSE"
     }
   ],
-  "author": {
-    "name": "Alexey Gordeyev",
-    "email": "aleksej@gordejev.lv",
-    "url": "https://github.com/biggora"
-  },
+  "author": "Alexey Gordeyev <aleksej@gordejev.lv> (https://github.com/biggora)",
   "contributors": [
-    {
-      "name": "Vitalii Onyshchenko",
-      "url": "https://github.com/uzer-ua"
-    }
+    "Vitalii Onyshchenko (https://github.com/uzer-ua)"
   ],
   "keywords": [
     "useragent",
@@ -39,8 +32,7 @@
     "lint": "make lint"
   },
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "engines": {
     "node": ">=0.8"
