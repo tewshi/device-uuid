@@ -10,13 +10,13 @@
 <div id="fingerprint-2"></div>
 <div id="fingerprint-3"></div>
 <script>
-    var uuid = new DeviceUUID().get();
+    const uuid = new DeviceUUID().get();
     //
     console.log(uuid)
     console.log('3a91f950-dec8-4688-ba14-5b7bbfc7a563')
     document.getElementById("fingerprint").innerHTML = uuid;
-    var du = new DeviceUUID().parse();
-    var dua = [
+    const du = new DeviceUUID().parse();
+    const dua = [
         du.language,
         du.platform,
         du.os,
@@ -40,8 +40,8 @@
     ];
     console.log(dua)
     // IE cpuClass
-    var uuid2 = du.hashMD5(dua.join(':'));
-    var uuid3 = du.hashInt(dua.join(':'));
+    const uuid2 = du.hashMD5(dua.join(':'));
+    const uuid3 = du.hashInt(dua.join(':'));
     console.log(uuid2.slice(0,8), uuid2.slice(8,12), uuid2.slice(12,16), uuid2.slice(16,20), uuid2.slice(20))
     document.getElementById("fingerprint-2").innerHTML = uuid2;
     document.getElementById("fingerprint-3").innerHTML = uuid3;
