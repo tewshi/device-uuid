@@ -1,14 +1,14 @@
 # device-uuid
-Fast browser device uuid generation plugin. The plugin based on [express-useragent](https://github.com/biggora/express-useragent) and written in pure JavaScript, no dependencies.
+Fast browser device uuid generation plugin. The plugin based on [express-useragent](https://github.com/biggora/device-uuid) and written in pure JavaScript, no dependencies.
 
 ## Installation
 
 ```bash
- $ bower install device-uuid --save
+ $ bower install @tewshi/device-uuid --save
 ```
 or
 ```bash
- $ npm install device-uuid --save
+ $ npm install @tewshi/device-uuid --save
 ```
 
 ## Usage overview
@@ -20,7 +20,7 @@ Include files in your HTML. The minimum required for this plugin are:
 #### Execute the plugin:
 automatically create not browser depended uuid:
 ```javascript
-    var uuid = new DeviceUUID().get();
+    var uuid = new DeviceUUID.get();
 ```
 as a result example:
 ```
